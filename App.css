@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  background: lavender;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  background:pink;
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  color:black;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: black;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input:focus {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add Button */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background:lightsteelblue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #218838;
+}
+
+/* Error */
+.error {
+  color: #ffdddd;
+  background: rgba(255, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Table */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+table th {
+  background: #1d3557;
+  color: white;
+  padding: 12px;
+}
+
+table td {
+  padding: 12px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+table tr:nth-child(even) td {
+  background: rgba(240, 240, 240, 0.9);
+}
+
+table tr:hover td {
+  background: #d6f5ff;
+  transition: 0.3s;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #dc3545;
+  padding: 8px 14px;
+}
+
+.delete-btn:hover {
+  background: #b02a37;
+}
+
+/* Empty Records Message */
+p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+  }
+}
